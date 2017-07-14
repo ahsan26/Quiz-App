@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="app/Stylings/custom.css" />
+    <script src="https://use.fontawesome.com/db0222698d.js"></script>
+</head>
+
+<body onload="dataShow(optionShow);setup();">
+    <div class="container">
+        <div class="center-block col-md-12">
+            <div id="main">
+                <div id="head" class="center-block">
+                    <h1 id="main_heading">Quiz</h1>
+                </div>
+                <div id="main_content">
+                    <div class="center-block underline"></div>
+                    <div class="center-block" id="question">
+                        <p id="question_text"></p>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6 options_parents" onclick="dataShow(optionShow,1);">
+                                    <div class="option col-md-6" id="o1">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 options_parents" onclick="dataShow(optionShow,2);">
+                                    <div class="option col-md-6" id="o2">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 options_parents" onclick="dataShow(optionShow,3);">
+                                    <div class="option col-md-6" id="o3">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 options_parents" onclick="dataShow(optionShow,4);">
+                                    <div class="option col-md-6" id="o4">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-block underline"></div>
+                    <div id="counter_show" class="text-muted"></div>
+                    <p id="timer" class="text-right timer-position text-danger"></p>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="app/Scripts/app.js"></script>
+        <script src="app/Scripts/question.js"></script>
+        <script src="app/Scripts/counter.js"></script>
+</body>
+
+</html>
